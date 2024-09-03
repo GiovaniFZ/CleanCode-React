@@ -5,9 +5,13 @@ import Footer from "./components/Footer"
 export default function App() {
   const [todos, setTodo] = useState<string[]>([])
 
+  function handleCreateNewTodo() {
+    
+  }
   return (
+
     <div>
-      <Header onCreateNewToDo={() => {}}/>
+      <Header onCreateNewToDo={handleCreateNewTodo}/>
 
       <main>
         <h2>Advantages</h2>
