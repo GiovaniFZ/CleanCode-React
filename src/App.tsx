@@ -9,6 +9,9 @@ export default function App() {
   function handleCreateNewTodo() {
 
   }
+
+  const isTodoListEmpty = todos.length === 0;
+
   return (
 
     <div>
@@ -41,6 +44,11 @@ export default function App() {
         <ul>
           {todos.map(todo => <li key={todo}>{todo}</li>)}
         </ul>
+        
+      {isTodoListEmpty && (
+        <p>Nenhum todo cadastrado</p>
+      )}
+
       </main>
       <Footer />
     </div>
