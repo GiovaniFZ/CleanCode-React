@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <div>
-      <Header />
+      <Header onCreateNewToDo={() => {}}/>
 
       <main>
         <h2>Advantages</h2>
